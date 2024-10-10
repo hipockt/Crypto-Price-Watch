@@ -1,31 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Crypto Price Watch Information</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elderly Helping Hands</title>
     <style>
-        img {
-            max-width: 100%;  /* Make the images responsive */
-            height: auto;     /* Maintain aspect ratio */
-            max-height: 600px; /* Set a maximum height */
-        }
-
-        .image-container {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
             display: flex;
-            justify-content: center;  /* Center the images horizontally */
-            align-items: center;      /* Center them vertically (optional) */
-            margin-bottom: 20px;      /* Adds space between images */
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background-color: #fff;
+        }
+        .lead-image {
+            max-width: 100%;
+            height: auto;
+        }
+        h1, h2, p {
+            color: #333;
+        }
+        main {
+            flex-grow: 1;
+            padding: 20px;
+            min-height: calc(100vh - 180px); /* Adjusting for header/footer height */
+        }
+        section {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label, input, textarea {
+            margin: 10px 0;
+            width: 100%;
+            max-width: 400px;
+        }
+        input[type="submit"] {
+            width: 100px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <div class="image-container">
-        <img src="images\image1.png" alt="Image 1">
-    </div>
-    
-<footer>
-        <p>&copy; 2024 Crypto Price Watch</p>
-        <p><a href="https://www.facebook.com/cryptopricewatch">Visit our Facebook Page</a></p>
-    </footer>
+    <header>
+        <img src="images/image1.png" alt="Elderly Helping Hands Title Image" class="lead-image">
+        <h1>Elderly Helping Hands</h1>
+        <p>Your trusted partner in providing computer help and training for the elderly.</p>
+    </header>
 
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Computer training for seniors</li>
+                <li>Software support</li>
+                <li>Online safety and security education</li>
+                <li>Computer maintenance</li>
+                <li>Learning how to use the computer</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to contact us through the form below:</p>
+
+            <form action="https://formspree.io/f/xwpeggpb" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+        
+    <footer>
+        <p>&copy; 2024 Elderly Helping Hands</p>
+        <p><a href="https://www.facebook.com/elderlyhelpinghand">Visit our Facebook Page</a></p>
+    </footer>
 </body>
 </html>
